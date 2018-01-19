@@ -71,8 +71,8 @@ NPC.prototype.takeDamage = function () {
 };
 
 function Humanoid(options) {
-  GameObject.call(this, options);
-  this.factions = options.factions;
+  NPC.call(this, options);
+  this.faction = options.faction;
   this.language = options.language;
   this.weapons = options.weapons;
 }
